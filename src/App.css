@@ -1,42 +1,45 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+#shop-main-box{
+  width: 1140px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header, #header-icon, #header-search-box>div, #header-buttons-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  padding: 8px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#header-icon, #header-icon-img {
+  width: 100px;
+  height: 40px;
 }
 
-.card {
-  padding: 2em;
+#header-search-box {
+  border: 1px #DCDCE7 solid;
+  border-radius: 8px;
+  margin: 0 16px;
+  min-width: 70%;
 }
 
-.read-the-docs {
-  color: #888;
+#product-search {
+  width: 100%;
+  border: none;
+}
+
+#voice-search-btn{
+  padding: 0 4px;
+}
+
+#find-btn{
+  padding: 0 16px;
+}
+
+.header-btn{
+  font-weight: 400;
+  font-size: 0.9em;
+  background-color:unset;
 }

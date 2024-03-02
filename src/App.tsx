@@ -1,34 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+  <div id='shop-main-box'>
+    <Header/>
+  </div>
+  )
+}
+
+function Header(){
+  return (
+    <header>
+      <div id='header-icon'>
+        <a title="prom.ua" href="https://prom.ua/">
+          <img id='header-icon-img' src="/prom-header-icon.webp" alt="Prom"/>
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+
+      <div id='header-search-box'>
+        <div>
+          <input id='product-search' type="search" name="search_term" placeholder="Я шукаю..."/>
+          <button id='voice-search-btn' aria-label="Голосовий пошук">&#127897;</button>
+          <button id='find-btn' type="submit" disabled>Знайти</button>
+        </div>
+      </div>
+
+      <div id='header-buttons-box'>
+        <button className='header-btn' type="button" title="Увійти">
+          <img src="" alt="" />
+          <span>Увійти</span>
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        <button className='header-btn' type="button" title="Обране">
+          <img src="" alt="" />
+          <span>Обране</span>
+        </button>
+        <button className='header-btn' type="button" title="Кошик">
+          <img src="" alt="" />
+          <span>Кошик</span>
+        </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </header>
   )
 }
 
